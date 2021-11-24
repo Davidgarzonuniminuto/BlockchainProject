@@ -1,4 +1,4 @@
-pragma solidity ^0.8.6;
+pragma solidity ^0.8.6; //version de solidity
 
 contract TaskCrud {
     
@@ -18,7 +18,7 @@ contract TaskCrud {
     
     
     function buscaIndex(uint _id) internal view returns (uint) { // funcion encargada de buscar una tarea especifica
-        for (uint i = 0; i < tareas.length; i++) {
+        for (uint i = 0; i < tareas.length; i++) //ciclo de la función {
             if (tareas[i].id == _id) {
                 return i;
             }
